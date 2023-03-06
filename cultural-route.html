@@ -10,14 +10,34 @@
 </head>
 
 <header>
-    <a href="index.html"><img class="home-icon" src="images/home icon.png"></a>
-    <img class="mini-logo" src="images/logo.png">
+    <a href="index.html" class="home"><img class="home-icon" src="images/home-icon.png" alt="home icon"></a>
     <h2>ISGA</h2>
-
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <img src="images/hamburger-icon.svg" alt="hamburger-icon">
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biking.html">Discover A'dam</a></li>
+            <li><a href="japan.html">Back in Japan</a></li>
+            <li><a href="streets.html">Streets of A'dam</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
     <i onclick="history.back()">Go Back</i>
+    <div class="route-type">
+        <input type="checkbox" id="biking">
+        <label for="biking">
+            <img src="images/fiets.png" alt="biking icon" class="fiets">
+        </label>
+        <p class="fietsen-info">
+            It is better to bike this route. Just follow the map here below!
+        </p>
+    </div>
+
     <h2>Cultural route</h2>
     <i> In this cultural route you will come across different museums & cultural places of Amsterdam.
         This route will begin at the Central Station of Amsterdam and from there you will start your
@@ -47,8 +67,8 @@
 </main>
 
 <footer>
-    <img class="blokjes" src="images/blokjes met ruimte.png">
-    <img class="socials" src="images/social iconen.png">
+    <img class="blokjes" src="images/blokjes.png" alt="blokjes">
+    <img class="socials" src="images/social-iconen.png" alt="social media icon">
 </footer>
 
 </html>

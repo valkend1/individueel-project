@@ -6,7 +6,7 @@
     font-style: normal;
     font-weight: 250;
   }
-body{
+html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,6 +20,7 @@ header{
     position: sticky;
     margin: 0;
     height: 50px;
+    display: flex;
 }
 
 header img{
@@ -28,8 +29,7 @@ header img{
 
 header h2{
     text-align: center; 
-    margin-top: 0;
-    padding-top: 4px;
+    margin-top: 5px;
     font-family: Electroharmonix;
     font-size: 30px;
 }
@@ -38,6 +38,11 @@ header h2{
 float: left;
 margin-top: 4px;
 margin-left: 4px;
+width: 26%;
+}
+
+.home{
+width: 148px;
 }
 
 .mini-logo{
@@ -47,6 +52,90 @@ margin-left: 4px;
     width: 19px;
 }
 
+.nav-tabs{
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgb(236, 42, 42);
+    width: 200px;
+}
+
+.nav-tabs a{
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-icon{
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    width: 400px; 
+}
+
+.menu-toggle:checked ~ .menu {
+    display: block;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgb(236, 42, 42);
+    border-color: black;
+    border-width: 2.5px;
+    border-style: solid;
+    width: 200px;
+  }
+  
+  .menu li {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-icon {
+    display: block;
+    position:absolute;
+    left: 315px;
+    top: 1px;
+  }
+  
+  .menu-icon i {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  #menu-toggle{
+      display: none;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    display: block;
+  }
 /* Main */
 i{
     padding: 15px;
@@ -55,23 +144,73 @@ i{
 
 .fiets{
     position: absolute;
-    width: 14%;
-    right: 8px;
-    top: 62px;
+    width: 15%;
+    right: 7px;
+    top: 10%;
+}
+
+.fietsen-info{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 150px;
+    background: rgb(236, 42, 42);
+    padding: 10px;
+}
+
+#biking{
+    display: none;
+}
+
+#biking:checked ~.fietsen-info{
+    display: block;
 }
 
 .ov{
     position: absolute;
-    right: 100px;
-    top: 55px;
-    width: 8%;
+    right: 7px;
+    top: 10%;
+    width: 9%;
+}
+
+.ov-info{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 150px;
+    background: rgb(236, 42, 42);
+    padding: 10px;
+}
+#public-transport{
+    display: none;
+}
+
+#public-transport:checked ~.ov-info{
+    display: block;
 }
 
 .lopen{
+    width: 7%;
     position: absolute;
-    width: 6.5%;
-    right: 64px;
-    top: 52px;
+    right: 7px;
+    top: 10%;
+}
+
+.lopen-info{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 150px;
+    background: rgb(236, 42, 42);
+    padding: 10px;
+}
+#walking{
+    display: none;
+}
+
+
+#walking:checked ~ .lopen-info{
+    display: block;
 }
 
 h2{

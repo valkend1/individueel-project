@@ -6,7 +6,8 @@
     font-style: normal;
     font-weight: 250;
   }
-body{
+
+html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,6 +20,7 @@ header{
     position: sticky;
     margin: 0;
     height: 50px;
+    display: flex;
 }
 
 header img{
@@ -27,8 +29,7 @@ header img{
 
 header h2{
     text-align: center; 
-    margin-top: 0;
-    padding-top: 4px;
+    margin-top: 5px;
     font-family: Electroharmonix;
     font-size: 30px;
 }
@@ -37,6 +38,11 @@ header h2{
 float: left;
 margin-top: 4px;
 margin-left: 4px;
+width: 26%;
+}
+
+.home{
+width: 148px;
 }
 
 .mini-logo{
@@ -45,6 +51,87 @@ margin-left: 4px;
     margin-right: 4px;
     width: 19px;
 }
+
+.nav-tabs{
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgb(236, 42, 42);
+    width: 200px;
+}
+
+.nav-tabs a{
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-icon{
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    width: 400px; 
+}
+
+.menu-toggle:checked ~ .menu {
+    display: block;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgb(236, 42, 42);
+    border-color: black;
+    border-width: 2.5px;
+    border-style: solid;
+    width: 200px;
+  }
+  
+  .menu li {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-icon {
+    display: block;
+    position:absolute;
+    left: 315px;
+    top: 1px;
+  }
+  
+  
+  #menu-toggle{
+      display: none;
+  }
+  /* Ervoor zorgen dat de menu wordt uitgeklapt */
+  #menu-toggle:checked ~ .menu {
+    display: block;
+  }
 /* Main */
 .logo{
     width: 17%;
@@ -103,13 +190,3 @@ footer{
     top: 68px;
     right: 101px;
 }
-
-/* nav{
-    display: block;
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-} */

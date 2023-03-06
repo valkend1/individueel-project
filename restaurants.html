@@ -12,20 +12,34 @@
 <body>
 
     <header>
-        <a href="index.html"><img class="home-icon" src="images/home icon.png"></a>
-        <img class="mini-logo" src="images/logo.png">
+        <a href="index.html" class="home"><img class="home-icon" src="images/home-icon.png" alt="home icon"></a>
         <h2>ISGA</h2>
-
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <img src="images/hamburger-icon.svg" alt="hamburger-icon">
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biking.html">Discover A'dam</a></li>
+                <li><a href="japan.html">Back in Japan</a></li>
+                <li><a href="streets.html">Streets of A'dam</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
 
         <i onclick="history.back()">Go Back</i>
-        <a>
-            <img class="fiets" src="images/fiets icon.png">
-            <img class="ov" src="images/ov icon.png">
-            <img class="lopen" src="images/lopen-icon.png">
-        </a>
+        <div class="route-type">
+            <input type="checkbox" id="public-transport">
+            <label for="public-transport">
+                <img src="images/ov-icon.png" alt="ov icon" class="ov">
+            </label>
+            <p class="ov-info">
+                You can take tram 24 or bus 357. Check <a href="https://9292.nl/">9292</a> for the exact route.
+            </p>
+        </div>
         <h2>Japanese Restaurants</h2>
         <i> If you love Japanese food, then is the route for you! There are a lot of different places so
             we have a route with a couple of restaurants that you can visit. The first one on the route
@@ -51,7 +65,8 @@
 
     </main>
     <footer>
-        <img class="blokjes" src="images/blokjes met ruimte.png">
-        <img class="socials" src="images/social iconen.png">
+        <img class="blokjes" src="images/blokjes.png" alt="blokjes">
+        <img class="socials" src="images/social-iconen.png" alt="social media icon">
     </footer>
+
 </html>

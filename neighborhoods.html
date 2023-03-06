@@ -10,24 +10,43 @@
 </head>
 
 <header>
-    <a href="index.html"><img class="home-icon" src="images/home icon.png"></a>
-    <img class="mini-logo" src="images/logo.png">
+    <a href="index.html" class="home"><img class="home-icon" src="images/home-icon.png" alt="home icon"></a>
     <h2>ISGA</h2>
-
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <img src="images/hamburger-icon.svg" alt="hamburger-icon">
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biking.html">Discover A'dam</a></li>
+            <li><a href="japan.html">Back in Japan</a></li>
+            <li><a href="streets.html">Streets of A'dam</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
     <i onclick="history.back()">Go Back</i>
+    <div class="route-type">
+        <input type="checkbox" id="walking">
+        <label for="walking">
+            <img src="images/lopen-icon.png" alt="walking icon" class="lopen">
+        </label>
+        <p class="lopen-info">
+            It is better to walk this route. Just follow the map here below!
+        </p>
+    </div>
     <h2>Neighborhoods</h2>
     <i> In this route you will go through different neighborhoods of Amsterdam. This route starts
-        from Central Station and from here you can bike or walk to Chinatown (Zeedijk) of Amsterdam.
+        from Central Station and from here you can walk to Chinatown (Zeedijk) of Amsterdam.
         Close by Zeedijk you will come across one of the most popular neighborhoods of Amsterdam:
-        Red Light District. But be careful overhere when you are biking as it is more of a walking
-        neighborhood!
+        Red Light District. If you prefer to bike be careful overhere when you are biking as it
+        is more of a walking neighborhood!
         <br>
-        From here you can go to 9 Straatjes (9 Streets) where you have cute little stores for clothing 
-        and more. When you are done exploring this streets you can go to the last stop of this route: 
-        De Pijp. Overhere you can find some nice restaurants/bars where you could end your day trip. 
+        From here you can go to 9 Straatjes (9 Streets) where you have cute little stores for clothing
+        and more. When you are done exploring this streets you can go to the last stop of this route:
+        De Pijp. Overhere you can find some nice restaurants/bars where you could end your day trip.
     </i>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d6892.084554402127!2d4.887178
@@ -43,8 +62,8 @@
 </main>
 
 <footer>
-    <img class="blokjes" src="images/blokjes met ruimte.png">
-    <img class="socials" src="images/social iconen.png">
+    <img class="blokjes" src="images/blokjes.png" alt="blokjes">
+    <img class="socials" src="images/social-iconen.png" alt="social media icon">
 </footer>
 
 </html>

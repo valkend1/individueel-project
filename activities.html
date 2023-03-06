@@ -10,21 +10,41 @@
 </head>
 
 <header>
-    <a href="index.html"><img class="home-icon" src="images/home icon.png"></a>
-        <img class="mini-logo" src="images/logo.png">   
+    <a href="index.html" class="home"><img class="home-icon" src="images/home-icon.png" alt="home icon"></a>
     <h2>ISGA</h2>
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <img src="images/hamburger-icon.svg" alt="hamburger-icon">
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biking.html">Discover A'dam</a></li>
+            <li><a href="japan.html">Back in Japan</a></li>
+            <li><a href="streets.html">Streets of A'dam</a></li>
+        </ul>
+    </nav>
 </header>
 <main>
     <i onclick="history.back()">Go Back</i>
+    <div class="route-type">
+        <input type="checkbox" id="public-transport">
+        <label for="public-transport">
+            <img src="images/ov-icon.png" alt="ov icon" class="ov">
+        </label>
+        <p class="ov-info">
+            You can take tram 24 or bus 357. Check <a href="https://9292.nl/">9292</a> for the exact route.
+        </p>
+    </div>
     <h2>Japanese activities</h2>
     <i>Amsterdam has some activities where you could get reminded of the activities that you have in
-        Japan. Such like Otaking where you can get your favourite anime figure from a Gashapon. This 
+        Japan. Such like Otaking where you can get your favourite anime figure from a Gashapon. This
         is also the only Gashapon shop in Europe. Next place that we have is Duke of Tokyo where you
-        can do some karaoke. This place is decorated like a real karaoke place of Japan and the 
-        cocktails are really nice. If you have some nice weather then you should go to Amstelpark 
-        and go through the  Japanese Garden. And of course we can't forget to play some games at an 
+        can do some karaoke. This place is decorated like a real karaoke place of Japan and the
+        cocktails are really nice. If you have some nice weather then you should go to Amstelpark
+        and go through the Japanese Garden. And of course we can't forget to play some games at an
         arcade hall. In Amsterdam we have a couple which are small, but in Amsterdam South-East there
-        is a bigger one named Gamestate.     
+        is a bigger one named Gamestate.
     </i>
     <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d39001.31882409195!2d4.883942
     403228246!3d52.34172107377567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e1!4m5!1s0x47c60919
@@ -40,8 +60,8 @@
 </main>
 
 <footer>
-    <img class="blokjes" src="images/blokjes met ruimte.png">
-    <img class="socials" src="images/social iconen.png">
+    <img class="blokjes" src="images/blokjes.png" alt="blokjes">
+    <img class="socials" src="images/social-iconen.png" alt="social media icon">
 </footer>
 
 </html>

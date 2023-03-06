@@ -10,14 +10,33 @@
 </head>
 
 <header>
-    <a href="index.html"><img class="home-icon" src="images/home icon.png"></a>
-    <img class="mini-logo" src="images/logo.png">
+    <a href="index.html" class="home"><img class="home-icon" src="images/home-icon.png" alt="home icon"></a>
     <h2>ISGA</h2>
-
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <img src="images/hamburger-icon.svg" alt="hamburger-icon">
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biking.html">Discover A'dam</a></li>
+            <li><a href="japan.html">Back in Japan</a></li>
+            <li><a href="streets.html">Streets of A'dam</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
     <i onclick="history.back()">Go Back</i>
+    <div class="route-type">
+        <input type="checkbox" id="walking">
+        <label for="walking">
+            <img src="images/lopen-icon.png" alt="walking icon" class="lopen">
+        </label>
+        <p class="lopen-info">
+            It is better to walk this route. Just follow the map here below!
+        </p>
+    </div>
     <h2>Japanese stores</h2>
     <i>
         In Amsterdam we also have some Japanese stores. So if you would like to be back in Japan
@@ -42,8 +61,8 @@
 </main>
 
 <footer>
-    <img class="blokjes" src="images/blokjes met ruimte.png">
-    <img class="socials" src="images/social iconen.png">
+    <img class="blokjes" src="images/blokjes.png" alt="blokjes">
+    <img class="socials" src="images/social-iconen.png" alt="social media icon">
 </footer>
 
 </html>
